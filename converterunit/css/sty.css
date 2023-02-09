@@ -1,0 +1,222 @@
+.body {
+    
+    margin: 0;
+    padding: 0;
+    
+}
+.Logo {
+    text-align: center;
+    margin: 30px;
+}
+
+/* navebar start    */
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255);
+    margin-left: 18px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255 255 255);
+}
+
+/* navebar end    */
+
+
+/* start of input and select  */
+.cont {
+    
+    margin-top: 25px;
+    text-align: center
+
+}
+.cont .in {
+    margin-top: 2px;
+    width: 330px;
+    height: 34px;
+}
+.cont fieldset {
+    
+    margin-top: 5px;
+    margin-left: 0;
+    text-align: center;
+}
+
+button, input, optgroup, select, textarea {
+    margin-top: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 330px;
+    height: 34px;
+}
+.form-group {
+
+    text-align: center;
+}
+.form-group select:focus option:first-child  {
+
+    display: none
+}
+
+
+
+.form-group .un2 {
+    margin-top:  10px
+}
+
+.form-group .un2 {
+    margin-top:  10px;
+}
+.form-group select option:first-child {
+    color: red;
+}
+.form-group .text {
+    margin-top: 19px;
+    color: green;
+    
+    text-align: center;
+}
+/* end of input and select  */
+
+
+.header .links {
+
+	position: relative;
+
+}
+
+.header .links:hover .icon span:nth-child(2) {
+
+	width: 100%
+}
+
+
+.header .links .icon {
+
+	    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 9px;
+    margin-left: -26px;
+}
+
+.header .links .icon span{
+
+	background-color: #d1d1d1;
+	margin-bottom: 5px;
+}
+
+.header .links .icon span:first-child{
+
+		height: 2px;
+		width: 100%;
+}
+
+
+.header .links .icon span:nth-child(2){
+	height: 2px;
+	width: 70%;
+	transition: 0.3s;
+	
+}
+.header .links .icon span:last-child{
+	height: 2px;
+
+	width: 100%;
+}
+
+.header .links ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #f6f6f6;
+	position: absolute;
+	right: 0px;
+	display: none;
+	min-width: 200px;
+	top: calc(100% + 15px)
+	z-index:1;
+	
+
+}
+.header .links:hover ul{
+
+	display: block;
+}
+.header .links ul::before {
+	content: "";
+	border-width: 10px;
+	border-style: solid;
+	position: absolute;
+	right: 5px;
+	top: -15px;
+	border-color: transparent transparent #f6f6f6 transparent;
+	
+
+}
+.header .links ul li a {
+
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #333;
+	transition: 0.3s;
+}
+
+.header .links ul li a:hover {
+
+	padding-left: 25px;
+}
+
+.header .links ul li:not(:last-child) a{
+
+	border-bottom: 1px solid #DDD;
+}
+/* end header  */
+
+
+/* start eng div */
+
+.eng {
+    
+
+    width: 53%;
+    height: 50%;
+    position: absolute;
+    margin-left: 568px;
+    margin-top: -226px;
+}
+.eng ul {
+    
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+
+	position: absolute;
+	min-width: 200px;
+	top: calc(100% + 15px)
+	z-index:1;
+	
+
+
+}
+
+
+
+.eng ul li {
+   margin-top: 4px;
+	color: black;
+
+
+}
+
+
+
+
+
+/* end eng div */

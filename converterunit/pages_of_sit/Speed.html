@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>converterunit</title>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/sty.css">
+    <script> 
+       
+            function con() {
+            var n1 = parseInt(document.getElementById("n1").value);
+                 
+           // from Meter/second to all units
+     
+            if ((document.getElementById("un1").value == "Meter/second (m/s)" ) && 
+                (document.getElementById("un2").value == "Meter/second (m/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1 ;
+            
+            }   
+            if ((document.getElementById("un1").value == "Meter/second (m/s)" ) && 
+                (document.getElementById("un2").value == "Meter/minute (m/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 59.988 ;
+            
+            }
+            if ((document.getElementById("un1").value == "Meter/second (m/s)" ) && 
+                (document.getElementById("un2").value == "Kilometer/hour (km/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 3.599712 ;
+            
+            } 
+            if ((document.getElementById("un1").value == "Meter/second (m/s)" ) && 
+                (document.getElementById("un2").value == "Foot/second (ft/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 3.28084  ;
+            
+            }if ((document.getElementById("un1").value == "Meter/second (m/s)" ) && 
+                (document.getElementById("un2").value == "Foot/minute (ft/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 196.8504  ;
+            
+            }if ((document.getElementById("un1").value == "Meter/second (m/s)" ) && 
+                (document.getElementById("un2").value == "Miles/hour (mi/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 2.237136  ;
+            
+            }
+            
+                
+            // from Meter/minute to all unit
+                
+            if ((document.getElementById("un1").value == "Meter/minute (m/min)" ) && 
+                (document.getElementById("un2").value == "Meter/second (m/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.01667  ;
+            
+            } if ((document.getElementById("un1").value == "Meter/minute (m/min)" ) && 
+                (document.getElementById("un2").value == "Meter/minute (m/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1  ;
+            
+            }if ((document.getElementById("un1").value == "Meter/minute (m/min)" ) && 
+                (document.getElementById("un2").value == "Kilometer/hour (km/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.060007  ;
+            
+            }if ((document.getElementById("un1").value == "Meter/minute (m/min)" ) && 
+                (document.getElementById("un2").value == "Foot/second (ft/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *0.054692 ;
+            
+            }if ((document.getElementById("un1").value == "Meter/minute (m/min)" ) && 
+                (document.getElementById("un2").value == "Foot/minute (ft/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *3.281496 ;
+            
+            }if ((document.getElementById("un1").value == "Meter/minute (m/min)" ) && 
+                (document.getElementById("un2").value == "Miles/hour (mi/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.037293 ;
+            
+            }
+            
+            // from Kilometer/hour to all unit
+                
+            if ((document.getElementById("un1").value == "Kilometer/hour (km/h)" ) && 
+                (document.getElementById("un2").value == "Meter/second (m/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.2778 ;
+            
+            }  if ((document.getElementById("un1").value == "Kilometer/hour (km/h)" ) && 
+                (document.getElementById("un2").value == "Meter/minute (m/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 16.66467 ;
+            
+            }if ((document.getElementById("un1").value == "Kilometer/hour (km/h)" ) && 
+                (document.getElementById("un2").value == "Kilometer/hour (km/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1 ;
+            
+            }if ((document.getElementById("un1").value == "Kilometer/hour (km/h)" ) && 
+                (document.getElementById("un2").value == "Foot/second (ft/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.911417 ;
+            
+            }if ((document.getElementById("un1").value == "Kilometer/hour (km/h)" ) && 
+                (document.getElementById("un2").value == "Foot/minute (ft/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 54.68504 ;
+            
+            }if ((document.getElementById("un1").value == "Kilometer/hour (km/h)" ) && 
+                (document.getElementById("un2").value == "Miles/hour (mi/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.621477 ;
+            
+            }
+
+            // from Foot/second to all unit
+                
+            if ((document.getElementById("un1").value == "Foot/second (ft/s)" ) && 
+                (document.getElementById("un2").value == "Meter/second (m/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.3048 ;
+            
+            } if ((document.getElementById("un1").value == "Foot/second (ft/s)" ) && 
+                (document.getElementById("un2").value == "Meter/minute (m/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 18.28434 ;
+            
+            }if ((document.getElementById("un1").value == "Foot/second (ft/s)" ) && 
+                (document.getElementById("un2").value == "Kilometer/hour (km/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1.097192  ;
+            
+            }if ((document.getElementById("un1").value == "Foot/second (ft/s)" ) && 
+                (document.getElementById("un2").value == "Foot/second (ft/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1  ;
+            
+            }if ((document.getElementById("un1").value == "Foot/second (ft/s)" ) && 
+                (document.getElementById("un2").value == "Foot/minute (ft/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *60  ;
+            
+            }if ((document.getElementById("un1").value == "Foot/second (ft/s)" ) && 
+                (document.getElementById("un2").value == "Miles/hour (mi/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.681879  ;
+            
+            }
+                
+            // from Foot/minute to all unit
+                
+            if ((document.getElementById("un1").value == "Foot/minute (ft/min)" ) && 
+                (document.getElementById("un2").value == "Meter/second (m/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.00508  ;
+            
+            } if ((document.getElementById("un1").value == "Foot/minute (ft/min)" ) && 
+                (document.getElementById("un2").value == "Meter/minute (m/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.304739  ;
+            
+            }if ((document.getElementById("un1").value == "Foot/minute (ft/min)" ) && 
+                (document.getElementById("un2").value == "Kilometer/hour (km/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.018287  ;
+            
+            }if ((document.getElementById("un1").value == "Foot/minute (ft/min)" ) && 
+                (document.getElementById("un2").value == "Foot/second (ft/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.016667  ;
+            
+            }if ((document.getElementById("un1").value == "Foot/minute (ft/min)" ) && 
+                (document.getElementById("un2").value == "Foot/minute (ft/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1 ;
+            
+            }if ((document.getElementById("un1").value == "Foot/minute (ft/min)" ) && 
+                (document.getElementById("un2").value == "Miles/hour (mi/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *0.011365 ;
+            
+            }
+            
+            // from Miles/hour to all unit
+                
+            if ((document.getElementById("un1").value == "Miles/hour (mi/h)" ) && 
+                (document.getElementById("un2").value == "Meter/second (m/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.447;
+            
+            }   if ((document.getElementById("un1").value == "Miles/hour (mi/h)" ) && 
+                (document.getElementById("un2").value == "Meter/minute (m/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *  26.81464;
+            
+            }if ((document.getElementById("un1").value == "Miles/hour (mi/h)" ) && 
+                (document.getElementById("un2").value == "Kilometer/hour (km/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *  1.609071 ;
+            
+            }if ((document.getElementById("un1").value == "Miles/hour (mi/h)" ) && 
+                (document.getElementById("un2").value == "Foot/second (ft/s)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *  1.466535;
+            
+            }if ((document.getElementById("un1").value == "Miles/hour (mi/h)" ) && 
+                (document.getElementById("un2").value == "Foot/minute (ft/min)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *  87.99213;
+            
+            }if ((document.getElementById("un1").value == "Miles/hour (mi/h)" ) && 
+                (document.getElementById("un2").value == "Miles/hour (mi/h)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1;
+            
+            }
+                
+            }
+    </script>
+    
+   
+</head>
+<body>
+        <div class="Logo">
+          <h1>CONVERTER.unit</h1>
+        </div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+<li class="nav-item active"><a class="nav-link" href="../index.html">Length</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Area.html">Area</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Volume.html">Volume</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Mass.html">Mass</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Density.html">Density</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Speed.html">Speed</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Torque.html">Torque</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Temperature.html">Temperature</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Mass_Flow.html">Mass Flow</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="High_Pressure.html">High Pressure</a>
+   </li>
+     <li class="nav-item dropdown">    
+          <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdownMenuLink" 
+             data-toggle="dropdown" aria-haspopup="true aria-expanded="false>More</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+       <a class="dropdown-item" href="Low_Pressure.html">Low Pressure</a>
+          <a class="dropdown-item" href="Dynamic_Viscosity.html">Dynamic Viscosity</a>
+          <a class="dropdown-item" href="Kinematic_Viscosity.html">Kinematic Viscosity</a>
+          <a class="dropdown-item" href="Volumetric_Gas_Flow.html">Volumetric Gas Flow</a>
+          <a class="dropdown-item" href="Volumetric_Liquid_Flow.html">Volumetric Liquid Flow</a>
+        </div>
+         
+    </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="cont">
+<div class="selects">     
+    <div class="sel">Write the number and Select the unit</div>
+         <form name="form">
+             <input class="in" id="n1" type="number" name="n1">
+         </form>
+<fieldset>
+    <div class="form-group">
+       <select id="un1" class="un1">
+              <option >Select unit you want converter it</option>
+              <option value="Meter/second (m/s)">Meter/second (m/s)</option>
+              <option value="Meter/minute (m/min)">Meter/minute (m/min)</option>
+              <option value="Kilometer/hour (km/h)">Kilometer/hour (km/h)</option>
+              <option value="Foot/second (ft/s)">Foot/second (ft/s)</option>
+              <option value="Foot/minute (ft/min)">Foot/minute (ft/min)</option>
+              <option value="Miles/hour (mi/h)">Miles/hour (mi/h)</option>
+         </select>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="con()">Converter to</button>
+</fieldset>
+    
+    </div>  
+       
+    <div class="form-group">
+              <select class="un2" id="un2">
+                  <option value="">Select unit you want</option>
+                   <option value="Meter/second (m/s)">Meter/second (m/s)</option>
+              <option value="Meter/minute (m/min)">Meter/minute (m/min)</option>
+              <option value="Kilometer/hour (km/h)">Kilometer/hour (km/h)</option>
+              <option value="Foot/second (ft/s)">Foot/second (ft/s)</option>
+              <option value="Foot/minute (ft/min)">Foot/minute (ft/min)</option>
+              <option value="Miles/hour (mi/h)">Miles/hour (mi/h)</option>
+         </select>
+         <p id="text" class="text">Resulte</p>
+    
+    </div>
+</div>
+    
+    
+ 
+</body> 
+</html>

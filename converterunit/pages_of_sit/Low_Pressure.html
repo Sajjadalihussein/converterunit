@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>converterunit</title>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/sty.css">
+    <script> 
+       
+            function con() {
+            var n1 = parseInt(document.getElementById("n1").value);
+                 
+           // from Millimeters to all units
+     
+            if ((document.getElementById("un1").value == "Meter of water (mH2O)" ) && 
+                (document.getElementById("un2").value == "Meter of water (mH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1;
+                
+            }    
+            if ((document.getElementById("un1").value == "Meter of water (mH2O)" ) && 
+                (document.getElementById("un2").value == "Foot of water (ftH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 3.280696  ;
+                
+            }    
+                   if ((document.getElementById("un1").value == "Meter of water (mH2O)" ) && 
+                (document.getElementById("un2").value == "Centimeter of mercury (cmHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 7.356339  ;
+                
+            }     if ((document.getElementById("un1").value == "Meter of water (mH2O)" ) && 
+                (document.getElementById("un2").value == "Inches of mercury (inHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 2.896043  ;
+                
+            }   if ((document.getElementById("un1").value == "Meter of water (mH2O)" ) && 
+                (document.getElementById("un2").value == "Inches of water (inH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 39.36572  ;
+                
+            }    
+                 if ((document.getElementById("un1").value == "Meter of water (mH2O)" ) && 
+                (document.getElementById("un2").value == "Pascal (Pa)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 9806  ;
+                
+            }    
+            
+            // from Foot of water to all unit
+                
+               if ((document.getElementById("un1").value == "Foot of water (ftH2O)" ) && 
+                (document.getElementById("un2").value == "Meter of water (mH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.304813  ;
+                
+            }      if ((document.getElementById("un1").value == "Foot of water (ftH2O)" ) && 
+                (document.getElementById("un2").value == "Foot of water (ftH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1 ;
+                
+            }  if ((document.getElementById("un1").value == "Foot of water (ftH2O)" ) && 
+                (document.getElementById("un2").value == "Centimeter of mercury (cmHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 2.242311 ;
+                
+            }if ((document.getElementById("un1").value == "Foot of water (ftH2O)" ) && 
+                (document.getElementById("un2").value == "Inches of mercury (inHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.882753 ;
+                
+            }if ((document.getElementById("un1").value == "Foot of water (ftH2O)" ) && 
+                (document.getElementById("un2").value == "Inches of water (inH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 11.9992 ;
+                
+            }
+                if ((document.getElementById("un1").value == "Foot of water (ftH2O)" ) && 
+                (document.getElementById("un2").value == "Pascal (Pa)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 2989 ;
+                
+            }
+             
+            // from Centimeter of mercury to all unit 
+               
+             if ((document.getElementById("un1").value == "Centimeter of mercury (cmHg)" ) && 
+                (document.getElementById("un2").value == "Meter of water (mH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.135937 ;
+                
+            }    if ((document.getElementById("un1").value == "Centimeter of mercury (cmHg)" ) && 
+                (document.getElementById("un2").value == "Foot of water (ftH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.445969 ;
+                
+            } if ((document.getElementById("un1").value == "Centimeter of mercury (cmHg)" ) && 
+                (document.getElementById("un2").value == "Centimeter of mercury (cmHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *1 ;
+                
+            } if ((document.getElementById("un1").value == "Centimeter of mercury (cmHg)" ) && 
+                (document.getElementById("un2").value == "Inches of mercury (inHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.39368 ;
+                
+            }if ((document.getElementById("un1").value == "Centimeter of mercury (cmHg)" ) && 
+                (document.getElementById("un2").value == "Inches of water (inH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 5.351265 ;
+                
+            }if ((document.getElementById("un1").value == "Centimeter of mercury (cmHg)" ) && 
+                (document.getElementById("un2").value == "Pascal (Pa)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *1333;
+                
+            }
+            
+            // from Inches of mercury to all unit
+                
+            if ((document.getElementById("un1").value == "Inches of mercury (inHg)" ) && 
+                (document.getElementById("un2").value == "Meter of water (mH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *0.345299;
+                
+            }   if ((document.getElementById("un1").value == "Inches of mercury (inHg)" ) && 
+                (document.getElementById("un2").value == "Foot of water (ftH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1.13282;
+                
+            }  if ((document.getElementById("un1").value == "Inches of mercury (inHg)" ) && 
+                (document.getElementById("un2").value == "Centimeter of mercury (cmHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 2.540135 ;
+                
+            } if ((document.getElementById("un1").value == "Inches of mercury (inHg)" ) && 
+                (document.getElementById("un2").value == "Inches of mercury (inHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1 ;
+                
+            }
+               if ((document.getElementById("un1").value == "Inches of mercury (inHg)" ) && 
+                (document.getElementById("un2").value == "Inches of water (inH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 13.59293 ;
+                
+            }
+               if ((document.getElementById("un1").value == "Inches of mercury (inHg)" ) && 
+                (document.getElementById("un2").value == "Pascal (Pa)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 3386 ;
+                
+            }
+            
+            // from Inches of water to all unit
+            if ((document.getElementById("un1").value == "Inches of water (inH2O)" ) && 
+                (document.getElementById("un2").value == "Meter of water (mH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.025403 ;
+                
+            }    
+                    if ((document.getElementById("un1").value == "Inches of water (inH2O)" ) && 
+                (document.getElementById("un2").value == "Foot of water (ftH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.083339  ;
+                
+            }     if ((document.getElementById("un1").value == "Inches of water (inH2O)" ) && 
+                (document.getElementById("un2").value == "Centimeter of mercury (cmHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.186872   ;
+                
+            } if ((document.getElementById("un1").value == "Inches of water (inH2O)" ) && 
+                (document.getElementById("un2").value == "Inches of mercury (inHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.073568  ;
+                
+            }    if ((document.getElementById("un1").value == "Inches of water (inH2O)" ) && 
+                (document.getElementById("un2").value == "Inches of water (inH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 1  ;
+                
+            }    if ((document.getElementById("un1").value == "Inches of water (inH2O)" ) && 
+                (document.getElementById("un2").value == "Pascal (Pa)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 249.1 ;
+                
+            }    
+            
+            
+            // from Pascal to all unit
+            
+            if ((document.getElementById("un1").value == "Pascal (Pa)" ) && 
+                (document.getElementById("un2").value == "Meter of water (mH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.000102 ;
+                
+            }  if ((document.getElementById("un1").value == "Pascal (Pa)" ) && 
+                (document.getElementById("un2").value == "Foot of water (ftH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.000335  ;
+                
+            }    if ((document.getElementById("un1").value == "Pascal (Pa)" ) && 
+                (document.getElementById("un2").value == "Centimeter of mercury (cmHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.00075  ;
+                
+            }      if ((document.getElementById("un1").value == "Pascal (Pa)" ) && 
+                (document.getElementById("un2").value == "Inches of mercury (inHg)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.000295   ;
+                
+            }       if ((document.getElementById("un1").value == "Pascal (Pa)" ) && 
+                (document.getElementById("un2").value == "Inches of water (inH2O)" )){
+            
+                 document.getElementById("text").innerHTML = n1 * 0.004014   ;
+                
+            }    if ((document.getElementById("un1").value == "Pascal (Pa)" ) && 
+                (document.getElementById("un2").value == "Pascal (Pa)" )){
+            
+                 document.getElementById("text").innerHTML = n1 *1   ;
+                
+            }    
+                
+            }
+    </script>
+    
+   
+</head>
+<body>
+        <div class="Logo">
+          <h1>CONVERTER.unit</h1>
+        </div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+<li class="nav-item active"><a class="nav-link" href="../index.html">Length</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Area.html">Area</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Volume.html">Volume</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Mass.html">Mass</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Density.html">Density</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Speed.html">Speed</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Torque.html">Torque</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Temperature.html">Temperature</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="Mass_Flow.html">Mass Flow</a>
+   </li>
+<li class="nav-item active"><a class="nav-link" href="High_Pressure.html">High Pressure</a>
+   </li>
+     <li class="nav-item dropdown">    
+          <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdownMenuLink" 
+             data-toggle="dropdown" aria-haspopup="true aria-expanded="false>More</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <a class="dropdown-item" href="Low_Pressure.html">Low Pressure</a>
+          <a class="dropdown-item" href="Dynamic_Viscosity.html">Dynamic Viscosity</a>
+          <a class="dropdown-item" href="Kinematic_Viscosity.html">Kinematic Viscosity</a>
+          <a class="dropdown-item" href="Volumetric_Gas_Flow.html">Volumetric Gas Flow</a>
+          <a class="dropdown-item" href="Volumetric_Liquid_Flow.html">Volumetric Liquid Flow</a>
+        </div>
+         
+    </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="cont">
+<div class="selects">     
+    <div class="sel">Write the number and Select the unit</div>
+         <form name="form">
+             <input class="in" id="n1" type="number" name="n1">
+         </form>
+<fieldset>
+    <div class="form-group">
+       <select id="un1" class="un1">
+              <option >Select unit you want converter it</option>
+              <option value="Meter of water (mH2O)">Meter of water (mH2O)</option>
+              <option value="Foot of water (ftH2O)">Foot of water (ftH2O)</option>
+              <option value="Centimeter of mercury (cmHg)">Centimeter of mercury (cmHg)</option>
+              <option value="Inches of mercury (inHg)">Inches of mercury (inHg)</option>
+              <option value="Inches of water (inH2O)">Inches of water (inH2O)</option>
+              <option value="Pascal (Pa)">Pascal (Pa)</option>
+         </select>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="con()">Converter to</button>
+</fieldset>
+    
+    </div>  
+       
+    <div class="form-group">
+              <select class="un2" id="un2">
+                  <option value="">Select unit you want</option>
+                               <option value="Meter of water (mH2O)">Meter of water (mH2O)</option>
+              <option value="Foot of water (ftH2O)">Foot of water (ftH2O)</option>
+              <option value="Centimeter of mercury (cmHg)">Centimeter of mercury (cmHg)</option>
+              <option value="Inches of mercury (inHg)">Inches of mercury (inHg)</option>
+              <option value="Inches of water (inH2O)">Inches of water (inH2O)</option>
+              <option value="Pascal (Pa)">Pascal (Pa)</option>
+         </select>
+         <p id="text" class="text">Resulte</p>
+    
+    </div>
+</div>
+    
+ 
+</body> 
+</html>
